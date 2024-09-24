@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Neutralization</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        span {
+            display: block;
+        }
+
+        .example {
+            font-weight: bold;     
+            margin: 20px;      
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+        }
+
+        .container{
+            margin: 0 auto;
+            width: 800px;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>V. Error Neutralization by the Irons Method and Algorithm</h1>
+        <p>The essence of the Irons method is as follows: When an error is detected (a symbol is encountered in the input sequence during parsing that does not match any expected symbols), the input sequence of symbols appears as follows: Tt, where T is the next symbol in the input stream (the erroneous symbol), and t is the remaining sequence of symbols in the input stream after T.</p>
+        <p>The neutralization algorithm consists of the following steps:</p>
+        <ol>
+            <li>Identify the incomplete bushes of the parsing tree;</li>
+            <li>Form the set L – the set of residual symbols of the incomplete bushes of the parsing tree;</li>
+            <li>Remove the next symbol from the input sequence until the sequence takes the form Tt such that U => T, where U ∈ L, that is, until the next symbol T in the sequence can be derived from one of the residual symbols of the incomplete bushes.</li>
+            <li>Determine which of the incomplete bushes caused the symbol U to appear in the set L (in other words, which of the incomplete bushes contains the symbol U).</li>
+        </ol>
+        <p>Thus, it is determined to which bush in the parsing tree the remaining input sequence of symbols can be "attached" after removing the erroneous fragment from the text.</p>
+
+
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Classification</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        span {
+            display: block;
+        }
+
+        .example {
+            font-weight: bold;     
+            margin: 20px;      
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+        }
+
+        .container{
+            margin: 0 auto;
+            width: 800px;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>III. Grammar Classification</h1>
+        <p>N. Chomsky identified four classes of grammars: type-0 grammars, context-sensitive, context-free, and regular grammars. The type of grammar is determined based on the form of its production rules.</p>
+        <ul>
+            <li>
+                Type-0 grammars have rules of the following form:
+                <ul>
+                    <li>α → β</li>
+                    <li>where α ∈ V*, V = VT ⋃ VN, β ∈ V*.</li>
+                </ul>
+            </li>
+            <li>
+                Context-sensitive grammars (CS grammars) have rules of the following form:
+                <ul>
+                    <li>γ1Aγ2 → γ1βγ2</li>
+                    <li>where A ∈ VN, β∈V+, γ1∈V*, and γ2∈V*.</li>
+                </ul>
+            </li>
+            <li>
+                Context-free grammars have rules of the following form:
+                <ul>
+                    <li>A → a</li>
+                    <li>where A∈VN, α∈V*.</li>
+                </ul>
+            </li>
+            <li>
+                Regular grammars have the strictest restrictions on the form of their rules:
+                <ul>
+                    <li>A → aB | a | ε</li>
+                    <li>where a∈VT, A∈VN, and B∈VB.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>According to Chomsky's classification, the grammar G[&lt;DEF&gt;] is a regular grammar, since in the left-hand side of the rules there is only one non-terminal symbol, and in the right-hand side, there is either one terminal and one non-terminal symbol or just one terminal symbol.</p>
+
+
+    </div>
+        
+</body>
+</html>

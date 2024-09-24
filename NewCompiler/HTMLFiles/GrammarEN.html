@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Development</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        span {
+            display: block;
+        }
+
+        .example {
+            font-weight: bold;     
+            margin: 20px;      
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+        }
+
+        .container{
+            margin: 0 auto;
+            width: 800px;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>II. Grammar Development</h1>
+        <p>Let's define the grammar for declaring an integer constant with initialization in Pascal G[‹Def›] using Chomsky notation with productions P:</p>
+        <ul>
+            <li>&lt;DEF&gt; -> 'const' &lt;CONST&gt;</li>
+            <li>&lt;CONST&gt; -> &lt;IDENT&gt;</li>
+            <li>&lt;IDENT&gt; -> LETTER (DIGIT | LETTER | '_')* &lt;COLON&gt;</li>
+            <li>&lt;COLON&gt; -> ':' &lt;TYPE&gt;</li>
+            <li>&lt;TYPE&gt; -> 'integer' &lt;EQUALS&gt;</li>
+            <li>&lt;EQUALS&gt; -> '=' &lt;NUMBER&gt;</li>
+            <li>&lt;NUMBER&gt; -> DIGIT+ &lt;SEMICOLON&gt;</li>
+            <li>&lt;SEMICOLON&gt; -> ';' &lt;END&gt;</li>
+        </ul>
+        <p>
+            - letter → “a” | “b” | “c” | ... | “z” | “A” | “B” | “C” | ... | “Z”<br>
+            - digit → “0” | “1” | “2” | “3” | “4” | “5” | “6” | “7” | “8” | “9”
+        </p>
+        <p>Following the introduced formal grammar definition, let's present G[‹Def›] and its components:</p>
+        <ul>
+            <li>Z = ‹DEF›;</li>
+            <li>VT = {'const', ':', 'integer', '=', ';', LETTER, DIGIT};</li>
+            <li>VN = {‹DEF›, ‹CONST›, ‹IDENT›, ‹COLON›, ‹TYPE›, ‹EQUALS›, ‹NUMBER›, ‹SEMICOLON›, ‹END›}.</li>
+        </ul>
+    </div>
+        
+</body>
+</html>
